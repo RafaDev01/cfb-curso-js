@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alert, prompt, confirm</title>
+
+  <script>
+    //irá mostrar um alerta na tela
+
+    var num1 = 5;
+    var num2 = 69 ;
+    var string = "essa é a string";
+    var nomePadrao = "convidado"
+    
+    alert("Esse é o alerta " + 5*5 + " " + parseInt(num1 + num2) +"\n"+ string + "\n");
+
+    //irá aparecer um prompt para colher um textp digitado
+    var nome = prompt("Digite seu nome",nomePadrao);
+    alert("Olá "+ nome);
+
+    document.write(nome + "\n");
+
+    //retorna um valor boleano com base na opcao que o usuário escolher
+    var res = confirm("Deseja continuar?");
+
+    document.write(res)
+
+ </script>
+
+</head>
+<body>
+  
+</body>
+</html>
