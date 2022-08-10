@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+
+    //var cor = new Array();
+    var mochila = [];
+
+    //adiciona elementos no fim do array
+    mochila.push("Faca");
+    mochila.push("Corda");
+    mochila.push("Água");
+    mochila.push("Suco");
+    mochila.push("Carne");
+    mochila.push("Pistola");
+    mochila.push("Pistola");
+    mochila.push("Pistola");
+    
+    //adiciona elemento no inicio do array
+    mochila.unshift("Pedra");
+
+    //remove o ultimo elemento do array
+    mochila.pop();
+
+    //remove o primeiro elemento do array
+    mochila.shift();
+
+    //remove do meio do array -> a partir do 0 remove 4
+    mochila.splice(1,1)
+    
+    document.write(mochila[0]+ "<br>");
+    document.write(mochila[1]+ "<br>");
+    document.write(mochila[2]+ "<br>");
+    document.write(mochila[3]+ "<br>");
+    document.write(mochila[4]+ "<br>");
+    document.write(mochila[5]+ "<br>");
+    document.write(mochila[6]+ "<br>");
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

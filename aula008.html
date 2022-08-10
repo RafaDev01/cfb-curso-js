@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+
+    var mochila1 = [] , mochila2 = [], pos;
+  
+    //adiciona elementos no fim do array
+    mochila1.push("Faca");
+    mochila1.push("Corda");
+    mochila1.push("Água");
+    mochila1.push("Suco");
+    mochila1.push("Carne");
+    mochila1.push("Pistola");
+
+    mochila2.push("Garfo");
+    mochila2.push("Tênis");
+    mochila2.push("Diamante");
+    mochila2.push("Ouro");
+    mochila2.push("Erva");
+    mochila2.push("Spray");
+
+    mochila = mochila1.concat(mochila2);
+    
+    for(let itens of mochila){
+      document.write(itens + "<br>");
+    }
+    /*
+    //Busca o elemento solicitado , se retofnar -1 é porque o elemento não foi encontrado
+    pos = mochila1.indexOf("Pistola");
+
+    if(pos < 0){
+      document.write("<br>Ítem não está na mochila<br>");
+    }else{
+      document.write("<br>Ítem está na mochila na posição "+pos)
+    }
+    */
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
