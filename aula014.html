@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <h2>texto 1</h2>
+  <p>texto 2</p>
+  <p>texto 3</p>
+  <p>texto 4</p>
+  <h2>texto 5</h2>
+
+<hr/>
+
+  <script>
+    //retorna varios elementos em uma estrutura de vetor
+
+    /*
+    retornando somente o elemento de indice 2
+    var tagsp = document.getElementsByTagName("p")[2];
+    */
+
+    var tagsp = document.getElementsByTagName("p");
+
+    //manipulando os elementos
+    document.write(tagsp[2].style.color="blue");
+
+    for(let i=0;i<tagsp.length;i++){
+      tagsp[i].style.color="#f00";
+    }
+
+  </script>
+</body>
+</html>

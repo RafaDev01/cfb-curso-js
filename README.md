@@ -24,3 +24,21 @@ array, concat, indexOf
 
 # aula 009
 array bi dimencionais
+
+# aula 010
+array bi dimencional , for
+
+# aula 011
+try, catch , finally
+
+# aula012
+getElementById
+
+# aula013
+innerHTML
+
+# aula014
+getElementsByTagName
+
+# aula015
+querySelectorAll
