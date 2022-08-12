@@ -5,15 +5,47 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    .titulo{
+      color: #f00;
+      font-size: 20px;
+      text-decoration: underline;
+    }
+
+    div{
+      border: 1px solid #000;
+      padding: 10px;
+      display: inline-block;
+    }
+
+    a{
+      display: block;
+    }
+
+  </style>
 </head>
 <body>
   
+  <h1 class="titulo">querySelectorAll</h1>
+  <p>O querySelectorAll()</p>
+  <h2 class="titulo">curso</h2>
+  <p>Lorem, ipsum dolor sit </p>
+  <p>texto texto texto</p>
+  <div>
+    <p>texto1 aaaaaaaaaaaaa</p>
+    <p class="titulo">texto2</p>
+  </div>
+  <a href="#">aa</a>
+  <a href="#">aa</a>
 
+  
 
   <script>
-
-    
-
+    //retorna tag, retorna tags dentro de uma tag etc.
+    var elementos = document.querySelectorAll(".titulo");
+    for(var i=0;i<elementos.length;i++){
+       document.write(elementos[i].innerHTML+"<br>");
+    }
   </script>
 </body>
 </html>
