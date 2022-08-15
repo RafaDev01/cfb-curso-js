@@ -42,3 +42,27 @@ getElementsByTagName
 
 # aula015
 querySelectorAll
+
+# aula016
+manipulando form
+
+# aula017
+manipulando data
+
+# aula018
+Math();
+
+# aula019
+function
+
+# aula020
+events
+
+# aula021
+addEventListener
+
+# aula022
+addEventListener - keydown
+
+# aula023
+setTimeou , setInterval

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Function</title>
+</head>
+<body>
+  
+
+  <script>
+
+    var numeros = new Array(5,6,9,8,4,2,3,5,15,98,4,25,15,15,1);
+
+    function media(nums){
+      //obtendo o tamnho do array
+      var tam = nums.length;
+      var soma = 0
+      //fazendo a soma de cada elemento do array
+      for(var i=0;i<tam;i++){
+        soma+=nums[i]
+      } 
+      //arredondando e fazendo o calculo da média
+      return Math.round(soma/tam);
+    }
+    document.write(media(numeros));
+
+/*
+     function soma(n1,n2){
+      return n1*n2;
+     }
+     var res = soma(3,7)
+     document.write(res);
+*/
+  </script>
+
+</body>
+</html>
