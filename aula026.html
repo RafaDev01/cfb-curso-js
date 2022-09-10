@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    #jogador{
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      background-color: #00f;
+      width: 50px;
+      height: 50px;
+    }
+  </style>
+
+  <script>
+
+    var jog;
+    var vel;
+    var dx;
+    var dy;
+    var px;
+    var py;
+    var anima;
+    var parar;
+    var iniciar;
+    var pararC;
+
+    function inicia(){
+      vel = 5;
+      dx = 1 
+      dy = 0
+      px = 0
+      py = 0
+
+      jog = document.getElementById('jogador');
+      jog.addEventListener("click",function(){
+        if(jog.style.backgroundColor == 'red') {
+          requestAnimationFrame(game);
+          jog.style.backgroundColor = 'blue'
+        }else{
+          cancelAnimationFrame(anima);
+          jog.style.backgroundColor = 'red'
+        }
+      });
+
+      iniciar = document.getElementById('iniciar')
+      iniciar.addEventListener('click',function(){
+        if(jog.style.backgroundColor == 'blue'){
+          alert('Já foi aniciado.')
+        }else{
+          jog.style.backgroundColor = 'blue'
+          requestAnimationFrame(game);
+        }
+      });
+      
+      parar = document.getElementById('parar');
+      parar.addEventListener('click',function(){
+        if(jog.style.backgroundColor == 'red'){
+          alert('Já está parado.')
+        }else{
+          cancelAnimationFrame(anima);
+          jog.style.backgroundColor = 'red'
+        }
+      })
+      game();
+  }
+      
+
+    function game(){
+      px += dx * vel;
+      //py += dy * vel;
+      jog.style.left = px + "px";
+      //jog.style.top = py = "px";
+      if(px > 800){
+        dx = -1
+      } else if(px == 0){
+        dx = 1
+      }
+      anima = requestAnimationFrame(game);
+ 
+    }
+
+    window.addEventListener('load',inicia);
+
+
+  </script>
+
+</head>
+<body>
+  
+  <div id="jogador"></div>
+  <button id="iniciar">Iniciar</button>
+  <button id="parar">Parar</button>
+
+
+</body>
+</html>
